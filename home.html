@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Apps</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  animation: slideDown 0.5s ease;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.app-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: slideUp 0.5s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.app-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.app-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.app-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.app-card h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.app-card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.app-features {
+  text-align: left;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.app-features li {
+  margin: 5px 0;
+  margin-left: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .apps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-card {
+    padding: 20px;
+  }
+
+  .app-icon {
+    font-size: 45px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>🚀 My Apps</h1>
+    <p>A collection of useful web applications</p>
+  </div>
+
+  <div class="apps-grid">
+    <!-- AI Assistant App -->
+    <a href="index.html" class="app-card">
+      <div class="app-icon">🤖</div>
+      <h2>AI Assistant</h2>
+      <p>Chat with an intelligent AI that understands Urdu and English</p>
+      <ul class="app-features">
+        <li>✓ Bilingual support</li>
+        <li>✓ Instant responses</li>
+        <li>✓ Educational content</li>
+        <li>✓ Google Gemini AI</li>
+      </ul>
+      <button class="btn">Open App →</button>
+    </a>
+
+    <!-- Todo List App -->
+    <a href="todo.html" class="app-card">
+      <div class="app-icon">✓</div>
+      <h2>Todo List</h2>
+      <p>Organize your tasks with a simple and elegant todo list</p>
+      <ul class="app-features">
+        <li>✓ Local storage</li>
+        <li>✓ Task filtering</li>
+        <li>✓ Beautiful UI</li>
+        <li>✓ Responsive design</li>
+      </ul>
+      <button class="btn">Open App →</button>
+    </a>
+  </div>
+
+  <div class="footer">
+    <p>Made with ❤️ by Saim | All apps are offline-ready</p>
+  </div>
+</div>
+
+</body>
+</html>
