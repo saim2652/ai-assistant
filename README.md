@@ -1,121 +1,177 @@
-# 🤖 AI Assistant - Urdu & English
+# 🚀 My Apps Collection
 
-A simple, beautiful AI chatbot that understands both **Urdu** and **English** languages. Powered by Google Gemini AI.
+A collection of useful web applications with beautiful UI and powerful functionality.
 
-## ✨ Features
+## 📱 Available Apps
 
-- 💬 Chat interface with modern design
-- 🇵🇰 Full Urdu language support
-- 🇬🇧 English language support
-- 🎨 Dark theme with smooth animations
-- 📱 Fully responsive (works on mobile, tablet, desktop)
-- ⚡ Real-time responses using Gemini API
-- 🎯 Intelligent conversation handling
+### 1. 🤖 AI Assistant
+Chat with an intelligent AI that understands both Urdu and English.
+
+**Features:**
+- 💬 Bilingual support (Urdu & English)
+- ⚡ Instant AI responses using Google Gemini
+- 📚 Great for learning and asking questions
+- 🎨 Beautiful dark theme interface
+
+**Access:** [AI Assistant](index.html)
+
+### 2. ✓ Todo List
+Organize your tasks with a simple and elegant todo list application.
+
+**Features:**
+- 💾 Local storage (data persists in browser)
+- 🔍 Filter tasks (All, Active, Completed)
+- 📊 Real-time statistics
+- 📱 Fully responsive design
+- 🗑️ Easy task management
+
+**Access:** [Todo List](todo.html)
+
+---
 
 ## 🚀 Quick Start
 
-### Step 1: Get Your API Key
-1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. Sign in with your Google account (create one if needed)
-3. Click **"Create API key"**
-4. Copy the API key
+### Option 1: Access Online
+1. Go to your GitHub Pages: **https://saim2652.github.io/ai-assistant/**
+2. Click on any app card to open it
 
-### Step 2: Setup the Project
-1. Clone this repository:
+### Option 2: Local Setup
+1. Clone the repository:
    ```bash
    git clone https://github.com/saim2652/ai-assistant.git
    ```
+2. Open `home.html` in your browser
+3. Click on apps to use them
 
-2. Open `index.html` in a text editor
+---
 
-3. Find this line:
-   ```javascript
-   const API_KEY = "YOUR_GEMINI_API_KEY_HERE";
-   ```
+## 🛠️ For AI Assistant Setup
 
-4. Replace it with your API key:
-   ```javascript
-   const API_KEY = "paste_your_api_key_here";
-   ```
+**To use the AI Assistant app:**
 
-5. Save the file
+1. Get your API Key:
+   - Visit: https://makersuite.google.com/app/apikey
+   - Click "Create API key"
+   - Copy your key
 
-### Step 3: Run
-- Simply open `index.html` in your web browser
-- Start chatting!
+2. Add API Key:
+   - Open `index.html` in a text editor
+   - Find: `const API_KEY = "YOUR_GEMINI_API_KEY_HERE";`
+   - Replace with your actual key
+   - Save and refresh
 
-## 📖 How to Use
+3. Start chatting! 🎉
 
-1. Type your message in the input field
-2. Press **Enter** or click **Send**
-3. Wait for the AI to respond
-4. You can write in:
-   - **Urdu**: "Mujhe gravity samjhao"
-   - **English**: "What is artificial intelligence?"
-   - **Mix of both**: "AI ka matlab kya hota hai?"
+---
 
-## ⚙️ Technologies Used
+## 📁 Project Structure
+
+```
+ai-assistant/
+├── home.html       (Homepage - Start here!)
+├── index.html      (AI Assistant App)
+├── todo.html       (Todo List App)
+├── README.md       (This file)
+└── .gitignore      (Security)
+```
+
+---
+
+## 🎯 How to Use Each App
+
+### AI Assistant
+- Type your question in Urdu or English
+- Press Enter or click Send
+- Get instant AI responses
+- Use for learning, answering questions, or casual chat
+
+### Todo List
+- Type your task and click Add
+- Check off completed tasks
+- Filter by status (All, Active, Completed)
+- Tasks automatically save to your browser
+- Clear completed tasks when done
+
+---
+
+## 🔒 Security Notes
+
+- **API Key:** Never share your Gemini API key publicly
+- **For Production:** Use a backend server to handle API calls
+- **Local Storage:** Todo list data is stored in your browser (not sent anywhere)
+
+---
+
+## 💻 Technologies Used
 
 - **HTML5** - Structure
 - **CSS3** - Styling & Animations
 - **JavaScript** - Functionality
 - **Google Gemini API** - AI responses
+- **LocalStorage API** - Data persistence
 
-## 🔒 Security Note
+---
 
-⚠️ **IMPORTANT**: Never share your API key publicly!
-- The API key in the code is exposed to anyone who views the page source
-- For production use, set up a backend server to handle API calls
-- The API key should be stored securely on the server side
+## 📝 Features Highlights
+
+✨ **Modern UI** - Beautiful gradient designs
+✨ **Responsive** - Works on all devices
+✨ **Fast** - No external dependencies (except Gemini API)
+✨ **Offline** - Todo app works completely offline
+✨ **Easy to Use** - Intuitive interfaces
+
+---
 
 ## 🐛 Troubleshooting
 
-### "API Key Not Set!" Error
-- Make sure you've replaced `YOUR_GEMINI_API_KEY_HERE` with your actual API key
-- Refresh the page after making changes
+### 404 Error
+- Make sure you're accessing: `https://saim2652.github.io/ai-assistant/home.html`
+- Or just: `https://saim2652.github.io/ai-assistant/`
 
-### Connection Error
+### Apps Not Loading
+- Try refreshing the page
+- Clear browser cache (Ctrl+Shift+Delete)
 - Check your internet connection
+
+### AI Assistant Not Working
 - Verify your API key is correct
-- Check if the Gemini API is working at [Google AI Studio](https://makersuite.google.com/)
+- Check that API key is not expired
+- Visit: https://makersuite.google.com/app/apikey
 
-### No Response from AI
-- Wait a few seconds (first request may be slower)
-- Check browser console for errors (F12 → Console)
-- Verify API key has no extra spaces
+### Todo List Not Saving
+- Check if browser allows LocalStorage
+- Try a different browser
+- Clear browser cache and try again
 
-## 📝 Language Support
-
-| Language | Examples |
-|----------|----------|
-| **Urdu** | "Salam", "Mujhe padha karo", "Gravity kya hai?" |
-| **English** | "Hello", "Teach me", "What is AI?" |
-| **Roman Urdu** | "Mujhe chemistry samjhao" |
-
-## 🎨 Customization
-
-You can customize the chatbot by editing:
-- Colors in the `<style>` section
-- System prompt in the `sendMessage()` function
-- Header text in the HTML
-
-## 📜 License
-
-This project is open source and available for anyone to use.
-
-## 💡 Tips
-
-- Ask educational questions
-- Use it for language learning
-- Test different prompts to see AI capabilities
-- Keep conversations natural and friendly
+---
 
 ## 🤝 Contributing
 
-Feel free to fork, modify, and improve this project!
+Feel free to:
+- Fork this repository
+- Create new features
+- Improve existing apps
+- Submit pull requests
+
+---
+
+## 📞 Support
+
+If you face any issues:
+1. Check the troubleshooting section above
+2. Review the GitHub Issues
+3. Create a new issue with details
+
+---
+
+## 📄 License
+
+This project is open source and available for anyone to use and modify.
 
 ---
 
 **Made with ❤️ by Saim**
 
-Questions? Issues? Feel free to create a GitHub issue or contact me!
+⭐ If you like these apps, please give this repository a star on GitHub!
+
+Happy coding! 🚀
